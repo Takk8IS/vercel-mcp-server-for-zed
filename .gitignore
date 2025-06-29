@@ -1,0 +1,201 @@
+# Runtime & Dependencies
+## Node.js & JavaScript
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+coverage
+*.lcov
+.nyc_output
+.grunt
+bower_components
+.lock-wscript
+build/Release
+node_modules/
+jspm_packages/
+web_modules/
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.yarn-integrity
+.env*
+
+## Framework & Libraries
+### Next.js
+# .next/
+# out/
+# build/
+# dist/
+.cache/
+.vercel/
+.now/
+.serverless/
+.dynamodb/
+
+### Tailwind CSS
+.tailwindcss/
+tailwind.config.js.bak
+**/tailwind.generated.css
+
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+# lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*/
+
+## Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+debug/
+
+## PHP
+/vendor/
+composer.phar
+.phpunit.result.cache
+*.php_cs.cache
+.php_cs
+.php_cs.dist
+.php-cs-fixer.cache
+.php-cs-fixer.php
+
+## WordPress
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+
+# Development Environment
+## IDEs & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+*~
+.project
+.settings/
+.classpath
+.factorypath
+nbproject/
+*.sublime-workspace
+*.sublime-project
+
+## Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+## Dependencies & Packages
+# package-lock.json
+# yarn.lock
+# composer.lock
+# pnpm-lock.yaml
+## Builds & Compiled
+# /build/
+# /dist/
+# /out/
+*.min.js
+*.min.css
+*.map
+
+## Local Development
+*.local
+localhost
+
+## Test Coverage
+/coverage/
+.nyc_output/
+junit.xml
+coverage.xml
+
+# Infrastructure
+## Logs & Databases
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+debug.log
+
+## Cache
+.parcel-cache/
+.nuxt/
+.vuepress/.cache/
+.docusaurus/.cache/
+*.cache
+
+## Security
+### SSL/HTTPS
+*.pem
+*.cert
+*.key
+*.crt
+*.csr
+*.der
+*.pfx
+*.p12
+
+## Temporary Files
+*.tmp
+*.temp
+.temp/
+.tmp/

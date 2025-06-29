@@ -1,0 +1,68 @@
+# Core Configuration
+* text=auto
+
+# Development Files
+## Frontend Stack
+*.{js,jsx,ts,tsx,html,css,scss,sass,less,json,md,yml,yaml,sh,xml,txt,svg,vue} text eol=lf
+
+## Build Configuration
+*.config.js text eol=lf
+tailwind.config.js text eol=lf
+postcss.config.js text eol=lf
+
+## Backend Stack
+# Python
+*.{py,pyw,ipynb,pyi} text eol=lf
+requirements.txt text eol=lf
+Pipfile text eol=lf
+*.{pkl,h5} binary
+
+# Rust
+*.rs text eol=lf
+*.toml text eol=lf
+Cargo.toml text eol=lf
+
+# PHP/WordPress
+*.{php,php4,php5,phtml,inc,blade.php,sql} text eol=lf
+wp-config.php text eol=lf
+.htaccess text eol=lf
+
+# Binary Assets
+## Media
+*.{png,jpg,jpeg,gif,ico} binary
+*.{mp3,mp4,avi,mov,mkv} binary
+
+## Fonts
+*.{woff,woff2,ttf,eot} binary
+
+## Archives
+*.{zip,gz,tar,tgz,bz2,xz} binary
+
+## Database
+*.{sqlite,db} binary
+
+# Version Control
+## Merge Strategies
+*.{json,lock,toml,yaml,yml} merge=union
+
+## Language-specific Diffs
+*.{ts,tsx} diff=typescript
+*.{js,jsx} diff=javascript
+*.php diff=php
+*.py diff=python
+*.rs diff=rust
+
+## Diff Exclusions
+*.{min.js,min.css,bundle.js,bundle.css} -diff
+dist/** -diff
+build/** -diff
+
+# Documentation
+*.md linguist-language=Markdown merge=union
+*.rst linguist-language=reStructuredText
+
+# Security
+*.{crx,pem,pub} binary
+
+# Package Management
+*{package-lock.json,yarn.lock,Cargo.lock,composer.lock,poetry.lock} binary

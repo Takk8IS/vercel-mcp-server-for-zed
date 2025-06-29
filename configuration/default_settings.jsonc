@@ -1,0 +1,4 @@
+{
+    // Add the URL of your deployed Vercel MCP server
+    "url": "https://your-mcp-server.vercel.app/api/mcp",
+}
