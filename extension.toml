@@ -1,10 +1,10 @@
-id = "mcp-server-vercel"
-name = "Vercel MCP Server"
+id = "aws-mcp-server-for-zed"
+name = "AWS MCP Server"
 authors = ["David C Cavalcante <davcavalcante@proton.me>", "Takk™ Innovate Studio <say@takk.ag>"]
-version = "1.0.1"
+version = "1.0.0"
 schema_version = 1
-description = "💾 Model Context Protocol (MCP) Server for Vercel"
-repository = "https://github.com/Takk8IS/vercel-mcp-server-for-zed"
+description = "💾 Model Context Protocol (MCP) Server for AWS"
+repository = "https://github.com/Takk8IS/aws-mcp-server-for-zed"
 
-[context_servers.mcp-server-vercel]
-name = "Vercel MCP Server"
+[context_servers.aws-mcp-server-for-zed]
+name = "AWS MCP Server"

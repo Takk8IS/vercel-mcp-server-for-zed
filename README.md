@@ -1,45 +1,47 @@
-# 💾 Vercel MCP Server for Zed
+# 💾 AWS MCP Server for Zed
 
-This extension acts as a remote client for a [Vercel MCP](https://vercel.com/docs/mcp) server, allowing you to use it as a context server for [Zed's](https://zed.dev) [Agent Panel.](https://zed.dev/docs/ai/overview)
+This extension provides an AWS Model Context Protocol (MCP) server for the Zed editor, allowing you to use AWS services as a context provider for Zed's AI Assistant.
 
-It uses the `mcp-remote` tool to create a local stdio proxy to your remote, HTTP-based Vercel MCP server, enabling seamless integration with the Zed editor.
+It enables Zed to communicate with AWS services, such as retrieving information from S3, querying DynamoDB, or invoking Lambda functions, directly within the editor's context.
 
 ## 🤖 Overview
 
-Instead of running a local MCP server, this extension connects to a server you have deployed on Vercel. This allows you to leverage powerful, cloud-based tools within Zed's AI assistant.
+This extension starts a local MCP server that is configured to interact with your AWS account. By providing your AWS credentials, the server can access your AWS resources and provide relevant information to Zed's AI assistant.
 
 ### 🖥️ Screenshot
 
-![Vercel MCP Server for Zed](https://github.com/Takk8IS/vercel-mcp-server-for-zed/blob/main/assets/screenshot-01.png?raw=true)
+![AWS MCP Server for Zed](https://github.com/Takk8IS/aws-mcp-server-for-zed/blob/main/assets/screenshot-01.png?raw=true)
 
 ### 💾 Installation
 
 **1. Prerequisites**
 
-Before using this extension, you must have a Vercel MCP server deployed and accessible via a public URL. You can learn how to create one by following the [official Vercel MCP documentation](https://vercel.com/docs/mcp).
+Before using this extension, you must have an AWS account and have your AWS Access Key ID and Secret Access Key available.
 
 **2. Install from Zed Marketplace**
 
 - **Open**: Open the Command Palette in Zed (`cmd-shift-p`).
 - **Type**: Type `zed: extensions`.
-- **Search**: Search for "Vercel MCP Server" and install it directly from the extension marketplace.
+- **Search**: Search for "AWS MCP Server" and install it directly from the extension marketplace.
 
 **3. Configuration**
 
 - **Open**: Open your Zed `settings.json` file.
-- **Add**: Configure the URL of your deployed Vercel MCP server:
+- **Add**: Configure your AWS credentials:
 
 ```json
 "context_servers": {
-  "mcp-server-vercel": {
+  "aws-mcp-server-for-zed": {
     "settings": {
-      "url": "<YOUR_VERCEL_MCP_SERVER_URL>"
+      "aws_access_key_id": "<YOUR_AWS_ACCESS_KEY_ID>",
+      "aws_secret_access_key": "<YOUR_AWS_SECRET_ACCESS_KEY>",
+      "aws_region": "<YOUR_AWS_REGION>"
     }
   }
 }
 ```
 
-Replace `<YOUR_VERCEL_MCP_SERVER_URL>` with the actual URL of your server (e.g., `https://my-mcp-server.vercel.app/api/mcp`).
+Replace the placeholders with your actual AWS credentials and desired region.
 
 ## 🤝 Contributing
 
@@ -78,4 +80,4 @@ To contribute to public and social projects focused on research and artificial i
 - **Twitter**: [Takk](https://twitter.com/takk8is/)
 - **Medium**: [Takk](https://takk8is.medium.com/)
 
-Enjoy coding with the power of Vercel MCP in your Zed editor.
+Enjoy coding with the power of AWS MCP in your Zed editor.

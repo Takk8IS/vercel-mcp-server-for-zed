@@ -1,12 +1,12 @@
 [package]
-name = "mcp_server_vercel"
-version = "1.0.0"
+name = "aws-mcp-server-for-zed"
+version = "0.0.1"
 edition = "2021"
 publish = false
 license = "Apache-2.0"
 
 [lib]
-path = "src/mcp_server_vercel.rs"
+path = "src/mcp_server_aws.rs"
 crate-type = ["cdylib"]
 
 [dependencies]

@@ -1,16 +1,9 @@
-To use this extension, you need a Vercel MCP server deployed and accessible via a URL.
+# AWS MCP Server Installation
 
-1.  **Deploy your Vercel MCP server**: Ensure you have a Vercel MCP server already deployed. You can find instructions on how to create one in the [official Vercel MCP documentation](https://vercel.com/docs/mcp).
-2.  **Copy your server URL**: Obtain the URL of your deployed Vercel MCP server (e.g., `https://your-mcp-server.vercel.app/api/mcp`).
-3.  **Configure in Zed**: Open your Zed settings (via Command Palette: `settings: open your settings`).
-4.  **Add the configuration**: Insert the following JSON snippet into your Zed settings, replacing `<YOUR_VERCEL_MCP_SERVER_URL>` with the URL you copied:
+To use the AWS MCP server, you need to configure your AWS credentials in the settings.
 
-```json
-"context_servers": {
-  "mcp-server-vercel": {
-    "settings": {
-      "url": "<YOUR_VERCEL_MCP_SERVER_URL>"
-    }
-  }
-}
-```
+1.  **AWS Access Key ID**: Your AWS access key ID.
+2.  **AWS Secret Access Key**: Your AWS secret access key.
+3.  **AWS Region**: The AWS region to use.
+
+You can find these credentials in the AWS Management Console.
